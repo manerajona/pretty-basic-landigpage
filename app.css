@@ -1,0 +1,547 @@
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+html {
+	box-sizing: border-box;
+	font-size: .7rem;
+}
+
+body {
+	font-family: 'Baloo Tamma 2', cursive;
+	font-size: 1.6rem;
+	line-height: 2;
+
+}
+
+h1 {
+	font-size: 3.1rem;
+}
+
+@media (min-width:768px) {
+	h1 {
+		font-size: 4rem;
+	}
+}
+
+h2 {
+	font-size: 2.7rem;
+}
+
+@media (min-width:768px) {
+	h2 {
+		font-size: 3.1rem;
+	}
+}
+
+h3 {
+	font-size: 2.3rem;
+}
+
+@media (min-width:768px) {
+	h3 {
+		font-size: 2.7rem;
+	}
+}
+
+h4 {
+	font-size: 2rem;
+}
+
+@media (min-width:768px) {
+	h4 {
+		font-size: 2.3rem;
+	}
+}
+
+h5 {
+	font-size: 1.7rem;
+}
+
+@media (min-width:768px) {
+	h5 {
+		font-size: 2rem;
+	}
+}
+
+h6 {
+	font-size: 1.3rem;
+}
+
+@media (min-width:768px) {
+	h6 {
+		font-size: 1.7rem;
+	}
+}
+
+.seccion {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+@media (min-width: 768px) {
+	.seccion {
+		margin-top: 2rem;
+		margin-bottom: 2rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+.fw-300 {
+	font-weight: 300;
+}
+
+.tac {
+	text-align: center
+}
+
+.d-block {
+	display: block !important;
+}
+
+
+.black {
+	background-color: black;
+}
+
+.todo {
+	width: 100%;
+}
+
+.letrablanca h1 {
+	color: white;
+}
+
+.letranegra {
+	color: black;
+}
+
+.padding-bottom h1 {
+	padding-bottom: 20px;
+}
+
+.padding-top h1 {
+	padding-top: 20px;
+	margin: 0px;
+}
+
+.margin-bottom {
+	margin-bottom: 60px;
+}
+
+.margin-top {
+	margin-top: 40px;
+}
+
+.padding-top-mas {
+	padding-top: 8rem;
+}
+
+.padding-bottom-mas {
+	padding-bottom: 2.5rem;
+}
+
+.padding-bottom {
+	padding-bottom: 2px;
+}
+
+.fixed {
+	position: fixed;
+	top: 0;
+}
+
+.center {
+	margin: auto;
+}
+
+.margin {
+	margin: 2rem;
+}
+
+/*Imagen fondo fixed*/
+.imagenfondo {
+	background-image: url(./assets/main-bkg.jpg );
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+
+}
+
+/*Header inicio*/
+.site-header.inicio {
+	height: 100vh;
+	min-height: 60rem;
+	margin: 0;
+	padding: 0;
+}
+
+.contenidoheader {
+	height: 100%;
+	/*Para que el contenido header tome todo el header*/
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.contenidoheader h1 {
+	color: rgb(255, 255, 255);
+	padding-top: 30rem;
+	max-width: 60rem;
+	line-height: 1.2;
+	margin: 0rem 2rem;
+}
+
+.barra {
+	display: flex;
+	justify-content: center;
+	background-color: rgb(0, 0, 0, .5);
+	margin: 0;
+	height: 6rem;
+	width: 100%;
+}
+
+@media (min-width:768px) {
+	.barra {
+		display: flex;
+		justify-content: space-between;
+		/* align-items: left; */
+		/*Para alinear al centro*/
+		flex-direction: row-reverse;
+		background-color: rgb(0, 0, 0, .5);
+		margin: 0;
+		height: 6rem;
+		width: 100%;
+	}
+}
+
+/*Navegacion*/
+
+.navegacion {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 1.2rem;
+}
+
+@media (min-width:768px) {
+	.navegacion {
+		display: flex;
+		justify-content: flex-end;
+		align-items: left;
+		align-items: center;
+		padding-top: 1.2rem;
+		width: 100%;
+	}
+}
+
+.navegacion a {
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 2rem;
+}
+
+@media (min-width:768px) {
+	.navegacion a {
+		color: #ffffff;
+		/*El ultimo valor es la transparencia*/
+		text-decoration: none;
+		/*elimina la linea del enlace*/
+		font-size: 2rem;
+		/*	margin-left: 2rem;*/
+		margin: 10px 25px;
+	}
+}
+
+.navegacion a:hover {
+	color: #ff9425;
+}
+
+.navegacion a:first-of-type {
+	/*Al ultimo de la lista de a no quiero que tenga margin*/
+	margin-left: 0rem;
+}
+
+/*Nosotros*/
+
+.iconos-nosotros {
+	display: flex;
+	justify-content: space-between;
+}
+
+.icono {
+	flex-basis: 30%;
+	/*es lo mismo que width*/
+	text-align: center;
+	border: 2px outset;
+	margin: 5px;
+	padding: 5px;
+	background-color: rgb(255, 255, 255);
+	color: black;
+	width: 50%;
+	height: 50%;
+}
+
+.icono h3 {
+	text-transform: uppercase;
+	/*Cambiar a mayusculas, capitalize para la primer letra sola en mayus*/
+	margin-top: 2rem;
+}
+
+.conocenos {
+	padding: 5px;
+	margin-bottom: 20px;
+	margin-top: 10px;
+}
+
+
+.iconos-caracteristicas {
+	list-style: none;
+	/*Elimina las vinetas*/
+	display: flex;
+	justify-content: center;
+	width: 10rem;
+	height: 10rem;
+}
+
+
+/*Productos*/
+
+.fondoproductos {
+	background-color: black;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.carousel {
+	border: solid 10px;
+	border-color: white;
+	border-radius: 15px;
+	max-width: 90%;
+}
+
+/*DIv afuera contacto*/
+.fondo-contacto-afuera {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: url(./assets/secondary-bkg.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	width: 100%;
+	height: 100%;
+}
+
+/*Div afuera contacto2*/
+.contacto2 {
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100%;
+}
+
+@media (min-width:768px) {
+	.contacto2 {
+		width: 80%;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		height: 100%;
+	}
+}
+
+/*Horarios*/
+.horarios {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	background: black;
+	background-size: cover;
+	width: 100%;
+	height: auto;
+	margin-bottom: 2rem;
+}
+
+@media (min-width:768px) {
+	.horarios {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		background: black;
+		background-size: cover;
+		width: 70%;
+		height: 80%;
+	}
+}
+
+.map {
+	display: none;
+}
+
+@media (min-width:768px) {
+	.map {
+		display: flex;
+		width: 600px;
+		height: auto;
+		margin-bottom: 2rem;
+		justify-content: space-around;
+	}
+}
+
+.maps {
+	width: 100%;
+	height: 100%;
+	border: 10px solid black;
+	display: flex;
+	align-self: flex-start;
+}
+
+.imagenes-datos {
+	width: 100%;
+	height: 60%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 3rem;
+	padding-bottom: 0;
+}
+
+.dato {
+	display: flex;
+	text-align: center;
+	align-items: center;
+	align-content: center;
+	margin-bottom: 2rem;
+}
+
+.dato h6 {
+	margin-left: 2rem;
+	margin-bottom: 0;
+	color: white;
+}
+
+.dato h5 {
+	margin-left: 2rem;
+	margin-bottom: 0;
+	color: white;
+}
+
+.reloj {
+	width: 3rem;
+	height: 3rem;
+}
+
+.ubicacion {
+	width: 2.5rem;
+	height: 3.5rem;
+}
+
+.whatsapp {
+	width: 3rem;
+	height: 3rem;
+}
+
+
+/*Boton para ir al top*/
+.back-to-top {
+	background-image: url(./assets/up.png);
+	background-size: 25px 25px;
+	cursor: pointer;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	display: none;
+	width: 25px;
+	height: 25px;
+	border: none;
+}
+
+/*Form de mail para suscribirse*/
+h5 {
+	text-align: center;
+}
+
+.proximamente {
+	padding-bottom: 2rem;
+}
+
+@media (min-width:768px) {
+	.proximamente {
+		padding-bottom: 9rem;
+	}
+}
+
+label {
+	display: block;
+}
+
+input:not([type="submit"]),
+textarea,
+select {
+	padding: 0.5rem;
+	background-color: rgb(205, 205, 205);
+	display: block;
+	width: 100%;
+	border: none;
+	border-radius: 1rem;
+	margin-bottom: 1rem;
+	align-items: center;
+}
+
+.mail .suscribe {
+	display: flex;
+	align-items: center;
+	padding: 2rem;
+}
+
+.input:hover {
+	cursor: pointer;
+}
+
+fieldset {
+	display: flex;
+	flex-direction: column;
+}
+
+.working-hours {
+	border-left: 1px;
+	border-left-style: solid;
+	border-color: white;
+	padding-left: 2rem;
+	text-align: left;
+}
+
+.footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #000000;
+}
+
+.navegacion2 {
+	display: flex;
+	justify-content: flex-end;
+	align-items: left;
+	align-items: center;
+	padding-top: 1rem;
+}
+
+.navegacion2 a {
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 1.3rem;
+}
+
+.navegacion2 p {
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 1.3rem;
+}

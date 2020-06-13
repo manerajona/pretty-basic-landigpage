@@ -1,1 +1,1 @@
-# pretty-basic-landigpage
+# pretty-basic-landingpage
